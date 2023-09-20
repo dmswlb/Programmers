@@ -5,7 +5,7 @@ class Solution {
         int index=-1;
         int[] clone = arr.clone();
         Arrays.sort(clone);
-        if(arr.length==1 && arr[0]==10) answer= new int[] {-1};
+        if(arr.length==1) answer= new int[] {-1};
         else{
             answer = new int[arr.length-1];
             for(int i=0; i<arr.length; i++){
