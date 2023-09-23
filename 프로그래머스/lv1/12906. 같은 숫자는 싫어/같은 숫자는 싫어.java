@@ -12,8 +12,6 @@ public class Solution {
         for(Integer data:stack){
             answer[cnt++] = data;
         }
-
-
         return answer;
     }
 }
