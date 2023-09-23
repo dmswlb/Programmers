@@ -9,7 +9,8 @@ class Solution {
         for(int i=0; i<n-1; i++){
             if(std[i]+std[i+1]==0) {
                 std[i]=0;
-                std[i+1]=0;                
+                std[i+1]=0;    
+                i++;
             }
         }
         
