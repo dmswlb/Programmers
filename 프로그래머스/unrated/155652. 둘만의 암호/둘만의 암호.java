@@ -19,7 +19,7 @@ class Solution {
             for(int j=0; j<sb.length(); j++){
                 if(s.charAt(i) == sb.charAt(j)){
                     if(j+index <sb.length()) answer.append(sb.charAt(j+index));
-                    else answer.append(sb.charAt((j- sb.length()+ index)%sb.length()));
+                    else answer.append(sb.charAt((j+index)%sb.length()));
                 }
             }
         }      
