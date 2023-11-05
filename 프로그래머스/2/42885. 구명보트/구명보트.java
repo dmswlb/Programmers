@@ -5,22 +5,20 @@ class Solution {
         Arrays.sort(people);
         int r =0;
         int l = people.length-1;
-		int answer =0;        
-		while(r<=l){     
+	int answer =0;        
+	while(r<=l){     
             if(people[r]+people[r+1] >limit){
                 answer+=l-r+1;
                 break;
             }
-			if(people[r]+people[l]<=limit){
-				r++;
-			}  
+	    if(people[r]+people[l]<=limit) {r++;}  
             l--;
             answer++;
-			if(r==l) {
-				answer++;
-				break;
-			}             
-		}
-		return answer;
+	    if(r==l) {
+		answer++;
+		break;
+	   }             
+	}
+	return answer;
     }
 }
